@@ -2,7 +2,7 @@
   "name": "electron-playwright-yargs",
   "version": "1.0.0",
   "description": "A minimal Electron application using Yargs and tested with Playwrght",
-  "main": "main.js",
+  "main": "app/main.js",
   "scripts": {
     "start": "electron .",
     "format": "prettier --write ."
