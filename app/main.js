@@ -2,6 +2,8 @@ const path = require("path")
 
 const electron = require("electron")
 const log4js = require("log4js")
+const yargs = require("yargs/yargs")
+const yargsHelpers = require("yargs/helpers")
 
 let logger
 
@@ -25,6 +27,11 @@ electron.app.whenReady().then(() => {
         categories: { default: { appenders: ["default"], level: "debug" } },
     })
     logger = log4js.getLogger("default")
+
+    const args = process.argv
+    logger.debug("Raw arguments:", args)
+    const argv = yargs(yargsHelpers.hideBin(process.argv)).argv
+    logger.debug("Parsed arguments:", argv)
 
     createWindow()
 
