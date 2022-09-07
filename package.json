@@ -18,7 +18,7 @@
   "devDependencies": {
     "electron": "20.1.0",
     "mocha": "10.0.0",
-    "playwright": "1.25.0",
+    "playwright": "1.25.2",
     "prettier": "2.7.1"
   }
 }
