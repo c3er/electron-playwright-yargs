@@ -16,7 +16,7 @@
     "yargs": "17.5.1"
   },
   "devDependencies": {
-    "electron": "20.1.0",
+    "electron": "20.1.2",
     "mocha": "10.0.0",
     "playwright": "1.25.0",
     "prettier": "2.7.1"
